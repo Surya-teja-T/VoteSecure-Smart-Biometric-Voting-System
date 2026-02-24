@@ -1,0 +1,23 @@
+:root{
+  --bg:#f4f7fb; --card:#fff; --accent:#1976d2; --muted:#666;
+  --radius:10px; --pad:18px; --maxw:980px; --shadow: 0 6px 18px rgba(20,30,40,0.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family: "Segoe UI", Roboto, Arial, sans-serif;background:linear-gradient(180deg,#f7fbff 0%,var(--bg)100%);color:#222}
+.container{max-width:var(--maxw);margin:28px auto;padding:0 16px}
+.header{text-align:center;margin-bottom:18px}
+.card{background:var(--card);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow);margin-bottom:16px}
+.small{font-size:0.92rem;color:var(--muted)}
+label{display:block;margin:10px 0 6px;font-weight:600}
+input[type="text"], input[type="password"], select, button{width:100%;padding:10px 12px;border:1px solid #e3e9f0;border-radius:8px;font-size:1rem}
+button{background:var(--accent);color:#fff;border:none;cursor:pointer;font-weight:700}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.col{flex:1 1 260px;min-width:260px}
+.center{text-align:center}
+.status{padding:10px;border-radius:8px;background:#f1f8ff;border:1px solid #e0efff;color:#0b6ebf;margin-top:8px}
+.note{font-size:0.88rem;color:#555;margin-top:8px}
+.footer{font-size:0.85rem;text-align:center;color:var(--muted);margin-top:10px}
+.preview-img{max-width:100%;border-radius:8px;border:1px solid #eee}
+.controls{display:flex;gap:8px;flex-wrap:wrap}
+.controls button{flex:1}
+@media (max-width:560px){.col{min-width:100%}}

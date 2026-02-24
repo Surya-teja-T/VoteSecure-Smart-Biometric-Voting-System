@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Admin - Smart Biometric Voting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header"><h1>Admin Dashboard (Demo)</h1><p class="small">Review encrypted votes and ledger</p></div>
+
+    <div class="card">
+      <h3>Summary</h3>
+      <div class="row">
+        <div class="col card">
+          <h4>Total Votes</h4>
+          <p id="totalVotes" class="status">0</p>
+        </div>
+        <div class="col card">
+          <h4>Last Blocks (latest 10)</h4>
+          <pre id="ledgerPre" style="white-space:pre-wrap;background:#f6f9ff;padding:12px;border-radius:8px"></pre>
+        </div>
+      </div>
+      <div style="margin-top:12px" class="controls">
+        <button id="verifyLedgerBtn" class="btn">Verify Ledger Integrity</button>
+        <a class="btn" href="index.html" style="background:#444">Back to Voter UI</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Smart Biometric Voting - Aadhaar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Smart Biometric Voting — Demo</h1>
+      <p class="small">Step 1: Aadhaar verification (simulated)</p>
+    </div>
+
+    <div class="card">
+      <h2>Aadhaar Verification</h2>
+      <p class="small">Enter any 12-digit Aadhaar and OTP (demo OTP is <strong>123456</strong>).</p>
+
+      <form id="aadhaarForm" class="card">
+        <label for="aadhaar">Aadhaar Number</label>
+        <input id="aadhaar" name="aadhaar" type="text" maxlength="12" placeholder="123456789012" />
+
+        <label for="otp">OTP</label>
+        <input id="otp" name="otp" type="password" maxlength="6" placeholder="123456" />
+
+        <div style="margin-top:12px" class="center">
+          <button type="submit">Verify & Continue</button>
+        </div>
+        <div id="aadhaarStatus" class="note"></div>
+      </form>
+    </div>
+
+    <div class="card small">
+      <p><strong>Note:</strong> This prototype simulates Aadhaar verification for academic/demo purposes only.</p>
+      <p class="footer">After verification you'll be guided to face capture, fingerprint, and voting.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

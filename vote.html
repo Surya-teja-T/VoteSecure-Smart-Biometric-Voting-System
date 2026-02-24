@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Cast Vote - Smart Biometric Voting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header"><h1>Cast Your Vote</h1><p class="small">Step 4: Select candidate</p></div>
+
+    <div class="card">
+      <form id="voteForm">
+        <label for="candidate">Choose Candidate</label>
+        <select id="candidate" name="candidate">
+          <option value="Candidate A">Candidate A</option>
+          <option value="Candidate B">Candidate B</option>
+          <option value="Candidate C">Candidate C</option>
+        </select>
+        <div style="margin-top:12px" class="center">
+          <button type="submit">Submit Vote (Encrypted)</button>
+        </div>
+      </form>
+      <p class="note">Your vote will be encrypted and stored in the browser (demo).</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
